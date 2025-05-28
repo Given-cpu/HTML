@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='ust-8'>
+    <meta name='viewpoint' content='width=device-width,initial-scale=1.0'>
+    <link rel='stylesheet' href='styles.css'>
+    <title>I DON'T KNOW</title>
+  </head>
+  <body>
+    <h1 id='title'>I DON'T KNOW Survey form</h1>
+    <p id='description'>Thank you for taking the time to help us improve the form</p>
+    <form id='survey-form' action='/form' method='POST'>
+      <fieldset>
+        <label id='name-label'>Name:<input id='name' type='text' placeholder='Please enter your name' required /></label>
+      </fieldset>
+      <fieldset>
+        <label id='email-label'>Email:<input id='email' type='email' placeholder='Please enter your email' required /><label>
+      </fieldset>
+      <fieldset>
+        <label id='number-label'>Age(optional)<input id='number' type='number' min='18' max='63' placeholder='age' /></label>
+      </fieldset> 
+      <fieldset>
+        What would you like to call yourself?
+        <select id='dropdown'>
+          <option></option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Others</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        What do you think of this form?
+        <label><input type='radio' name='thought' value='wonderful' />Wonderful!</label>
+        <label><input type='radio' name='thought' value='notbad' />Not bad?</label>
+        <label><input type='radio' name='thought' value='soso' />Nah, just so-so.</label>
+      </fieldset>
+      <fieldset>
+        <label class='what'>What would you like to see improved? (Check all that apply)</label>
+        <label class='check'><input type='checkbox' name='answer' value='appearance'/>Appearance</label>
+        <label class='check'><input type='checkbox' name='answer' value='question'/>Question</label>
+        <label class='check'><input type='checkbox' name='answer' value='IDK'/>I DON'T KNOW</label>
+      </fieldset>
+      <fieldset class='spcial'>
+        <label class='comment'>Any comments or suggestions?</label>
+        <label><textarea id='text' placeholder='Your comments'></textarea></label>
+      <button id='submit' type='submit'>Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
